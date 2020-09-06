@@ -7,7 +7,13 @@ class Login extends Component {
     password: "",
   };
 
-  handleChange = () => {};
+  handleEmail = (e) => {
+    this.setState({ email: e.target.value });
+  };
+
+  handlePassword = (e) => {
+    this.setState({ password: e.target.value });
+  };
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -22,14 +28,14 @@ class Login extends Component {
             type="email"
             placeholder="email"
             name="email"
-            onChange={this.handleChange}
+            onChange={(e) => this.handleEmail(e)}
             value={email}
           />
           <input
             type="password"
             placeholder="password"
             name="password"
-            onChange={this.handleChange}
+            onChange={(e) => this.handlePassword(e)}
             value={password}
           />
           <button>LogIn</button>

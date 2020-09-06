@@ -8,7 +8,17 @@ class Register extends Component {
     password: "",
   };
 
-  handleChange = () => {};
+  handleEmail = (e) => {
+    this.setState({ email: e.target.value });
+  };
+
+  handlePassword = (e) => {
+    this.setState({ password: e.target.value });
+  };
+
+  handleName = (e) => {
+    this.setState({ name: e.target.value });
+  };
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -23,21 +33,21 @@ class Register extends Component {
             type="name"
             placeholder="name"
             name="name"
-            onChange={this.handleChange}
+            onChange={(e) => this.handleName(e)}
             value={name}
           />
           <input
             type="email"
             placeholder="email"
             name="email"
-            onChange={this.handleChange}
+            onChange={(e) => this.handleEmail(e)}
             value={email}
           />
           <input
             type="password"
             placeholder="password"
             name="password"
-            onChange={this.handleChange}
+            onChange={(e) => this.handlePassword(e)}
             value={password}
           />
           <button>Register</button>
