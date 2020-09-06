@@ -1,0 +1,24 @@
+.block {
+  display: block;
+  padding: 10px;
+}
+.title {
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: rebeccapurple;
+  text-align: center;
+}
+.search_txt {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.form {
+  display: flex;
+  font-family: sans-serif;
+  border: 1px solid rebeccapurple;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 400px;
+}

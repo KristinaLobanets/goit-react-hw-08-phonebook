@@ -1,0 +1,54 @@
+.block {
+  width: 400px;
+  height: max-content;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 7px -1px rgba(158, 158, 158, 0.71);
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.form {
+  display: block;
+  padding: 20px;
+}
+.label {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.name_form {
+  font-family: sans-serif;
+  color: rebeccapurple;
+}
+
+.input {
+  font-family: sans-serif;
+  display: block;
+  border: 1px solid rebeccapurple;
+  font-size: 18px;
+  width: 100%;
+  margin-left: 10px;
+}
+.button {
+  border-radius: 5px;
+  border: none;
+  background-color: rebeccapurple;
+  background-color: rebeccapurple;
+  border: 3px solid rebeccapurple;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  outline: none;
+  margin-left: 115px;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 3px solid rebeccapurple;
+  color: rebeccapurple;
+}

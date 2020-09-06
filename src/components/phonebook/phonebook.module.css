@@ -1,0 +1,40 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  margin: 0 auto;
+}
+
+.form {
+  margin-bottom: 50px;
+}
+
+.title {
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  height: 80px;
+  background-color: rebeccapurple;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contacts {
+  display: block;
+}
+
+.blockerror {
+  width: 300px;
+  height: max-content;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: #f32828;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+  margin: 0 auto;
+  position: absolute;
+}
