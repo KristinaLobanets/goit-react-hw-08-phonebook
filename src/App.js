@@ -7,6 +7,10 @@ const HomePage = lazy(() => import("./components/HomePage/HomePage"));
 
 const Phonebook = lazy(() => import("./components/phonebook/Phonebook.js"));
 
+const Login = lazy(() => import("./components/Login/Login"));
+
+const Register = lazy(() => import("./components/Register/Register.js"));
+
 const App = () => {
   return (
     <div>
@@ -27,6 +31,9 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={HomePage} />
             <Route path="/contacts" exact component={Phonebook} />
+            <Route path="/login" exact component={Login} />
+            <Route path="/register" exact component={Register} />
+
             <Redirect to="/" />
           </Switch>
         </Suspense>

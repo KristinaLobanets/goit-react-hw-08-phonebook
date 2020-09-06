@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "./Home.module.css";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <div>
-      <h2>HomePage</h2>
+      <h1 classNames={styles.hometitle}>Welcome to phonebook application!</h1>
     </div>
   );
 };
 
-export default HomePage;
+export default Home;
