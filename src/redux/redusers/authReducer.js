@@ -11,11 +11,17 @@ const user = createReducer(initialState, {
   [actionType.logOutSuccess]: () => initialState,
 });
 
-// const contacts = createReducer([], {
-//   [actionType.getContactSuccess]: (state, action) => action.payload,
-//   [actionType.deleteContactSuccess]: (state, action) =>
-//     state.filter((item) => item.id !== action.payload),
-//   [actionType.addContactSuccess]: (state, action) => [...state, action.payload],
-// });
+const token = createReducer(null, {
+  [actionType.registrationSuccess]: (state, { payload }) => payload.token,
+  [actionType.loginSuccess]: (state, { payload }) => payload.token,
+  [actionType.logOutSuccess]: () => null,
+});
 
-export default combineReducers({ user: user });
+const error = createReducer(null, {
+  [actionType.registrationError]: (state, { payload }) => payload,
+  [actionType.loginError]: (state, { payload }) => payload,
+  [actionType.logOutError]: (state, { payload }) => payload,
+  [actionType.getCurrentUserError]: (state, { payload }) => payload,
+});
+
+export default combineReducers({ user: user, token: token, error: error });

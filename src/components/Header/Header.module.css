@@ -1,0 +1,19 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rebeccapurple;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.HeaderLink {
+  padding: 10px;
+}
+
+.HeaderText {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+}
