@@ -1,13 +1,23 @@
-import React, { Suspense, lazy } from "react";
+import React, { Component } from "react";
 import Header from "./components/Header/Header";
-import { Switch, Route, Redirect, NavLink } from "react-router-dom";
+import { connect } from "react-redux";
+import authOperation from "./redux/taskOperations/authOperation";
 
-const App = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
-};
+class App extends Component {
+  componentDidMount() {
+    this.props.onGetCurrentUser();
+  }
+  render() {
+    return (
+      <>
+        <div>
+          <Header />
+        </div>
+      </>
+    );
+  }
+}
 
-export default App;
+const mapDispatchToProps = { onGetCurrentUser: authOperation.getCurrentUser };
+
+export default connect(null, mapDispatchToProps)(App);

@@ -4,7 +4,7 @@ import axios from "axios";
 const addContact = (name, number) => (dispatch) => {
   dispatch(contactAction.addContactRequest());
   axios
-    .post("http://localhost:2000/contacts", { name: name, number: number })
+    .post("/contacts", { name: name, number: number })
     .then((res) => {
       dispatch(contactAction.addContactSuccess(res.data));
     })
@@ -16,7 +16,7 @@ const addContact = (name, number) => (dispatch) => {
 const getContact = () => (dispatch) => {
   dispatch(contactAction.getContactRequest());
   axios
-    .get("http://localhost:2000/contacts")
+    .get("/contacts")
     .then((res) => {
       dispatch(contactAction.getContactSuccess(res.data));
     })
@@ -28,7 +28,7 @@ const getContact = () => (dispatch) => {
 const deleteContact = (id) => (dispatch) => {
   dispatch(contactAction.deleteContactRequest());
   axios
-    .delete(`http://localhost:2000/contacts/${id}`)
+    .delete(`/contacts/${id}`)
     .then(() => dispatch(contactAction.deleteContactSuccess(id)))
     .catch((err) => {
       dispatch(contactAction.deleteContactError(err));

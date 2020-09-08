@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Switch, Route, Redirect, NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
+import LogOut from "../LogOut/LogOut";
 
 const HomePage = lazy(() => import("../HomePage/HomePage.js"));
 
@@ -25,6 +26,7 @@ const Header = () => {
       <NavLink to="/login" className={styles.HeaderLink} exact>
         <p className={styles.HeaderText}>Login</p>
       </NavLink>
+      <LogOut />
       <Suspense fallback={<h1>Loading...</h1>}>
         <Switch>
           <Route path="/" exact component={HomePage} />
