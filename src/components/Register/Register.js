@@ -55,7 +55,7 @@ class Register extends Component {
             onChange={(e) => this.handlePassword(e)}
             value={password}
           />
-          <button>Register</button>
+          <button>Registration</button>
         </form>
       </div>
     );
