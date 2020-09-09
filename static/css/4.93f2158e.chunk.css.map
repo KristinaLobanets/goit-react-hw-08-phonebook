@@ -1,0 +1,1 @@
+{"version":3,"sources":["Home.module.css"],"names":[],"mappings":"AAAA,kBACE,aACF,CAEA,uBACE,aAAc,CACd,iBAAkB,CAClB,wBACF","file":"4.93f2158e.chunk.css","sourcesContent":[".home {\n  display: block;\n}\n\n.hometitle {\n  color: #242424;\n  text-align: center;\n  text-transform: uppercase;\n}\n"]}

@@ -1,0 +1,2 @@
+(this["webpackJsonpgoit-react-hw-02-phonebook"]=this["webpackJsonpgoit-react-hw-02-phonebook"]||[]).push([[4],{81:function(e,o,t){e.exports={home:"Home_home__3Pb9U",hometitle:"Home_hometitle__1MBI0"}},91:function(e,o,t){"use strict";t.r(o);var a=t(0),n=t.n(a),h=t(81),c=t.n(h);o.default=function(){return n.a.createElement("div",{classNames:c.a.home},n.a.createElement("h1",{classNames:c.a.hometitle},"Welcome to phonebook application!"))}}}]);
+//# sourceMappingURL=4.e5e963c7.chunk.js.map
