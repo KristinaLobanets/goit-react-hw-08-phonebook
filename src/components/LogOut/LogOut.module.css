@@ -1,0 +1,21 @@
+.logout {
+}
+
+.logoutbtn {
+  color: #fff;
+  border: none;
+  background-color: rebeccapurple;
+  height: 40px;
+  margin: 5px;
+}
+
+.logoutname {
+  color: rebeccapurple;
+  background-color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+  border: 2px solid rebeccapurple;
+  padding: 5px;
+}

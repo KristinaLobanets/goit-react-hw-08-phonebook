@@ -11,10 +11,20 @@
   font-size: 20px;
   margin-bottom: 30px;
   padding: 10px;
+  border: 2px solid rebeccapurple;
 }
 
 .Registerform button {
   font-size: 20px;
   padding: 10px;
   margin-bottom: 20px;
+  border: 2px solid rebeccapurple;
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
+.Registerform button:hover {
+  background-color: #fff;
+  border: 3px solid rebeccapurple;
+  color: rebeccapurple;
 }

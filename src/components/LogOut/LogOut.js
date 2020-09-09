@@ -1,12 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
 import authOperation from "../../redux/taskOperations/authOperation";
+import styles from "./LogOut.module.css";
 
 const LogOut = ({ name, onLogOut }) => {
   return (
-    <div>
-      <p>Hello {name}</p>
-      <button onClick={onLogOut}>Log Out</button>
+    <div className={styles.logout}>
+      <button className={styles.logoutbtn} onClick={onLogOut}>
+        Log Out
+      </button>
+      <p className={styles.logoutname}>Hello {name}</p>
     </div>
   );
 };
